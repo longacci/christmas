@@ -8,6 +8,9 @@ window.addEventListener('load',() => {
     const audio = document.createElement("AUDIO");
     audio.src = `./audio.mp3`;
     banner.insertAdjacentElement("beforebegin",audio);
+    setTimeout(() => {
+        audio.autoplay = true;
+    }, 5000);
     audio.autoplay = true;
     button.addEventListener("click",()=> {
         button.classList.add("hidden_button");
